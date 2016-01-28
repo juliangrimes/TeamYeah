@@ -36,6 +36,13 @@ function playRound(playerOne, playerTwo) {
 //while loop to continue to run the game until playerOneWins or playerTwoWins is met
 while (playerOneWins < 3 && playerTwoWins <3) {console.log ('Rock, Paper, Scissors, Shoot! Anything you want to do!')}
 
+// run an 'if' statement for the conditions to deteremine if player1 wins. 'else' player2 or tie
+if (p1 === "scissor" && p2 === "paper" || p1 === "paper" && p2 === "rock" || p1 === "rock" && p2 === "scissors")
+{winner = p1.name; p1.win++;}
+else if (p1 !== p2)
+{winner = p2.name; p2.win++;}
+else if(p1 === p2){console.log("It's a tie")}
+
 //Conditions to determine winner
 if (playerOne.getHand === 0 && playerTwo.getHand === 0); {
   console.log (playerOne.name + "got rock");
