@@ -26,6 +26,13 @@ function playRound() {
   console.log(playerOne.getHand, playerTwo.getHand)
 };
 
+// here is what I did. It's a bit shortened to save time
+function playRound(playerOne, playerTwo) {
+  var p1Hand = p1.hands();
+  var p2Hand = p2.hands();
+  var winner;
+};
+
 //while loop to continue to run the game until playerOneWins or playerTwoWins is met
 while (playerOneWins < 3 && playerTwoWins <3) {console.log ('Rock, Paper, Scissors, Shoot! Anything you want to do!')}
 
